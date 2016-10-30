@@ -13,3 +13,6 @@ cp sprouts/.gitignore .gitignore
 
 # replace README.md
 cp sprouts/README.md README.md
+
+# remove license info
+rm LICENSE
