@@ -1,4 +1,4 @@
-# Website/Webapp Specifications
+# Website/Webapp Requirements
 
 ## Functional Spec
 
