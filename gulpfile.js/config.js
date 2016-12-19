@@ -26,6 +26,7 @@ var dirs = {
         templatePartials: 'templates/partials',
         precompiledTemplates: 'js/compiledTemplates',
         scripts: 'js',
+        tests: 'js/spec',
         styles: 'scss',
         images: 'img',
         fonts: 'fonts'
