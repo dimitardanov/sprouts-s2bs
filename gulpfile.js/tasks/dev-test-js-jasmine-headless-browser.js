@@ -16,5 +16,5 @@ function testJS () {
     .pipe(jasmineBrowser.headless());
 }
 
-gulp.task('test-headless:js', testJS);
+gulp.task('test-headless-jasmine:js', testJS);
 module.exports = testJS;

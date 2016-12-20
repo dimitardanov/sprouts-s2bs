@@ -11,7 +11,7 @@ var testDir = [
 ];
 
 
-function testJS () {
+function testJasmineJS () {
   gulp.src(testDir)
     .pipe(jasmine({
       reporter: new reporters.TerminalReporter({
@@ -22,5 +22,5 @@ function testJS () {
     }));
 }
 
-gulp.task('test:js', testJS);
-module.exports = testJS;
+gulp.task('test-jasmine:js', testJasmineJS);
+module.exports = testJasmineJS;
