@@ -9,7 +9,7 @@ module.exports = function(config) {
 
     // preprocessors
     preprocessors: {
-      '**/*.js': [ 'browserify' ]
+      '**/*.js': [ 'browserify', 'coverage' ]
     },
 
     // list of files / patterns to load in the browser
@@ -28,7 +28,19 @@ module.exports = function(config) {
     exclude: [],
 
     // test results reporter to use
-    reporters: ['mocha'],
+    reporters: ['mocha', 'coverage'],
+
+    coverageReporter: {
+      reporters: [
+        {
+          type: 'text-summary'
+        },
+        {
+          type: 'html',
+          dir: '../../../coverage'
+        }
+      ]
+    },
 
     // web server port
     port: 9876,
