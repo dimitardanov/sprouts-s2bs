@@ -10,8 +10,7 @@ var testDir = [
   path.join(config.dirs.src.tests, '/**/*spec.js'),
 ];
 
-
-function testJasmineJS () {
+function testJasmineJS() {
   gulp.src(testDir)
     .pipe(jasmine({
       reporter: new reporters.TerminalReporter({

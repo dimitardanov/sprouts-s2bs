@@ -8,22 +8,25 @@ var pngcrush = require('imagemin-pngcrush');
 var imageminMozjpeg = require('imagemin-mozjpeg');
 
 var dir = {
-    src: path.join(config.dirs.src.images, '/**/*'),
-    dest: config.dirs.dev.images
-}
+  src: path.join(config.dirs.src.images, '/**/*'),
+  dest: config.dirs.dev.images
+};
 
-
-function compress () {
-    return gulp.src(dir.src)
-        .pipe(cache(imagemin({
-            optimizationLevel: 7, //3
-            progressive: true,
-            interlaced: true,
-            multipass: true,
-            svgoPlugins: [{ removeViewBox: false }],
-            use: [pngcrush(), imageminMozjpeg()]
-            })))
-        .pipe(gulp.dest(dir.dest));
+function compress() {
+  return gulp.src(dir.src)
+  .pipe(
+    cache(
+      imagemin({
+        optimizationLevel: 7, //3
+        progressive: true,
+        interlaced: true,
+        multipass: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [pngcrush(), imageminMozjpeg()]
+      })
+    )
+  )
+  .pipe(gulp.dest(dir.dest));
 }
 
 gulp.task('dev:images', compress);

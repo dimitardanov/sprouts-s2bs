@@ -9,10 +9,9 @@ var testDir = [
   path.join(config.dirs.src.tests, '/**/*spec.js'),
 ];
 
-
-function testJS () {
+function testJS() {
   return gulp.src(testDir)
-    .pipe(jasmineBrowser.specRunner({ console: true }))
+    .pipe(jasmineBrowser.specRunner({console: true}))
     .pipe(jasmineBrowser.headless());
 }
 

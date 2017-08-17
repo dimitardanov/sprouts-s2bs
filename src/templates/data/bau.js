@@ -7,4 +7,4 @@ var jiji = [{
 }, {
   breed: 'German Shepherd',
   size: 'big'
-}]
+}];

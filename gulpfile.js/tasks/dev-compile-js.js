@@ -5,15 +5,13 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var browserify = require('browserify');
 var hbsfy = require('hbsfy');
-var source = require("vinyl-source-stream");
+var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var sourcemaps = require('gulp-sourcemaps');
 
-
 var filesrc = path.join(config.dirs.src.scripts, config.files.jsmain);
 
-
-function jscompile () {
+function jscompile() {
   // set up the browserify instance on a task basis
   var b = browserify({
     entries: [filesrc],

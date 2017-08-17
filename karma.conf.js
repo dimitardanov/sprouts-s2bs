@@ -9,7 +9,7 @@ module.exports = function(config) {
 
     // preprocessors
     preprocessors: {
-      '**/*.js': [ 'browserify', 'coverage' ]
+      '**/*.js': ['browserify', 'coverage']
     },
 
     // list of files / patterns to load in the browser
@@ -21,7 +21,7 @@ module.exports = function(config) {
       // "main.js",
 
       // test files
-      "**/*.test.js"
+      '**/*.test.js'
     ],
 
     // list of files to exclude

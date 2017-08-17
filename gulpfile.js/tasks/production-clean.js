@@ -5,12 +5,12 @@ var gulp = require('gulp');
 var del = require('del');
 
 var dirs = {
-    production: config.rootDirs.production
+  production: config.rootDirs.production
+};
+
+function clean() {
+  return del([dirs.production]);
 }
 
-function clean () {
-    return del([dirs.production]);
-}
-
-gulp.task("production:clean", clean);
+gulp.task('production:clean', clean);
 module.exports = clean;
