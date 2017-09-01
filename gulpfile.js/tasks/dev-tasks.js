@@ -11,7 +11,7 @@ requireDir('./', {recurse: true});
 gulp.task('dev:css', function() {
   runSequence([
     'lint:scss',
-    'compile:sass'] //, 'lint:css'
+    'compile:sass']
   );
 });
 
