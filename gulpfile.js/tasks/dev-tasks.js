@@ -17,8 +17,6 @@ gulp.task('dev:css', function() {
 
 gulp.task('dev:js', function() {
   return runSequence(['lint:js',
-  // 'test-jasmine:js',
-  // 'test-headless-jasmine:js',
   'compile:js']);
 });
 
