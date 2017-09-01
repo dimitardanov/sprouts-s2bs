@@ -39,7 +39,6 @@
     "gulp-jshint": "^2.0.1",
     "gulp-mocha": "^2.2.0",
     "gulp-notify": "^2.2.0",
-    "gulp-purifycss": "^0.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-scss-lint": "^0.4.0",
