@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "./node_modules/.bin/karma start",
+    "gulp": "./node_modules/.bin/gulp",
     "ncu": "./node_modules/.bin/npm-check-updates"
   },
   "author": "",
