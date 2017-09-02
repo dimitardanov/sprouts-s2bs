@@ -4,7 +4,6 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "includeBootstrapStyles": "ln -s ../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/ src/scss/vendors/; cp node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss src/scss/vendors;"
     "test": "./node_modules/.bin/karma start",
     "ncu": "./node_modules/.bin/npm-check-updates"
   },
