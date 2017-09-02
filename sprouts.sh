@@ -22,3 +22,6 @@ cp sprouts/README.md README.md
 
 # remove license info
 rm LICENSE
+
+# check for package updates
+npm run ncu
