@@ -14,6 +14,9 @@ cp -r node_modules/bootstrap-sass/assets/fonts/bootstrap src/fonts/;
 # replace .gitignore
 cp sprouts/.gitignore .gitignore
 
+# remove .git directory
+rm -rf .git
+
 # replace README.md
 cp sprouts/README.md README.md
 
