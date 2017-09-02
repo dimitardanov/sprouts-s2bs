@@ -1,8 +1,7 @@
 {
-  "name": "swt",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "name": "sprouts",
+  "description": "A build system for static sites using gulp.",
   "scripts": {
     "test": "./node_modules/.bin/karma start",
     "gulp": "./node_modules/.bin/gulp",
