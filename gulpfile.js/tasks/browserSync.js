@@ -7,7 +7,12 @@ var browsersync = require('browser-sync');
 var dir = config.rootDirs.dev;
 
 function bsync(cb) {
-  return browsersync({server: {baseDir: dir}}, cb);
+  return browsersync(
+    {
+      server: {baseDir: dir},
+      open: false
+    },
+  cb);
 }
 
 gulp.task('browsersync', bsync);
