@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "includeBootstrapStyles": "ln -s ../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/ src/scss/vendors/; cp node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss src/scss/vendors;"
+    "ncu": "./node_modules/.bin/npm-check-updates"
   },
   "author": "",
   "license": "ISC",
@@ -53,6 +54,7 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.2.1",
     "sinon": "^1.17.7",
+    "npm-check-updates": "^2.12.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0",
