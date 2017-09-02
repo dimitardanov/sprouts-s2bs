@@ -51,7 +51,7 @@ gulp.task('watch:dev', function() {
 gulp.task('build:dev', function() {
   return runSequence(
     ['dev:clean', 'clear:cache'],
-    ['dev:images', 'dev:fonts', 'dev:css', 'dev:html',
+    ['dev:images', 'dev:fonts', 'dev:css', 'dev:html', 'dev:js'
   // 'dev:templates'
     ]
   );
