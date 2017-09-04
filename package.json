@@ -1,14 +1,23 @@
 {
-  "version": "1.0.0",
   "name": "sprouts",
   "description": "A build system for static sites using gulp.",
+  "author": "Dimitar Danov",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dimitardanov/sprouts-s2bs.git"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "npm": "^5.0.0"
+  },
   "scripts": {
     "test": "./node_modules/.bin/karma start",
     "gulp": "./node_modules/.bin/gulp",
     "ncu": "./node_modules/.bin/npm-check-updates"
   },
-  "author": "",
-  "license": "ISC",
+  "main": "gulpfile.js/index.js",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "browserify": "^14.4.0",
