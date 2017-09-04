@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# install prompt package
+npm install prompt --save-dev;
+
+# modify package.json
+node sprouts/modify-package-json.js;
+
 # install node packages
 npm install;
 
