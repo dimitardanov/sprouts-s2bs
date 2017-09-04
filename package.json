@@ -13,9 +13,11 @@
     "npm": "^5.0.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/karma start",
-    "gulp": "./node_modules/.bin/gulp",
-    "ncu": "./node_modules/.bin/npm-check-updates"
+    "test": "karma start",
+    "dev": "gulp",
+    "build:prod": "gulp build:production",
+    "sprouts": "./sprouts/sprouts.sh",
+    "ncu": "ncu"
   },
   "main": "gulpfile.js/index.js",
   "devDependencies": {
