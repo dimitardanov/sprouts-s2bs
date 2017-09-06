@@ -3,6 +3,7 @@ var config = require('../config');
 var path = require('path');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var notifier = require('node-notifier');
 var browserify = require('browserify');
 var hbsfy = require('hbsfy');
 var source = require('vinyl-source-stream');
@@ -25,6 +26,10 @@ function jscompile() {
         gutil.colors.bgRed.bold('Browserify Error:'),
         gutil.colors.red.underline(err.message)
       );
+      notifier.notify({
+        'title': 'Browserify Error',
+        'message': err.message
+      });
       this.emit('end');
     })
     .pipe(source(config.files.jsmain))
