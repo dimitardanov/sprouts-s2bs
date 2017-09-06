@@ -4,6 +4,7 @@ console.log('Updating package.json ...');
 const fs = require('fs');
 const path = require('path');
 const prompt = require('prompt');
+prompt.message = '';
 
 var packageJSON = JSON.parse(fs.readFileSync('package.json'));
 
