@@ -20,7 +20,13 @@ function jscompile() {
   });
 
   return b.bundle()
-    .on('error', gutil.log.bind(gutil, gutil.colors.red('Browserify:')))
+    .on('error', function(err) {
+      gutil.log(
+        gutil.colors.bgRed.bold('Browserify Error:'),
+        gutil.colors.red.underline(err.message)
+      );
+      this.emit('end');
+    })
     .pipe(source(config.files.jsmain))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
