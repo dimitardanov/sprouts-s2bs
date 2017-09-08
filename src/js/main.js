@@ -1,6 +1,6 @@
 
-// var templates = require('./compiledTemplates/templates');
-// var HBRS = require('handlebars');
+window.jQuery = $ = require('jquery');
+var bootstrap = require('bootstrap-sass');
 
 $(function() {
   console.log('hello world');
